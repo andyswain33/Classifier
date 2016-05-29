@@ -1,0 +1,30 @@
+﻿@using ClassifierComponent.SerializationModels;
+
+@{
+    @model ClassifierClassRootObject
+}
+
+<h2>Web NLClassifier</h2>
+
+@*<p>Top Class: <div id="modelData">@Model.top_class</div></p>
+<p>Other Predictions: @Model.top_class</p>*@
+
+<p>
+    Ask me any question you like about the weather in the box below.
+ 
+    @using (Html.BeginForm())
+    {
+       @Html.TextBox("textInput","",new { id = "textInput" })
+        <input id="classfiyButton" type="submit" value="classfiy" />
+    }
+
+</p>
+
+<p>
+    <ul>
+        @foreach (var item in @Model.classes)
+        {
+            <li>Class: @item.class_name, Confidence: @String.Format("{0:0.##}", item.confidence)</li>
+        }
+    </ul>
+</p>

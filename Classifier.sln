@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassifierComponentIntegration.specs", "Classifiyer.specs\ClassifierComponentIntegration.specs.csproj", "{AB27CF4E-AA86-4AA0-9F51-79DAFF296FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassifierComponent", "Classifier\ClassifierComponent.csproj", "{0679DF8B-2339-425C-A930-F02C5EB54D7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNLClassifier", "WebNLClassifier\WebNLClassifier.csproj", "{52B0DA45-16C2-4E68-94DD-B6C56129A3ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B5DB0DCC-4491-4167-AC64-7158A046AD61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ux", "Ux", "{DABDAF25-AC0C-44A5-B4C8-250EEDAEC49B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B8570D95-8314-4899-A530-E3666C91E6D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNLClassfier.specs", "WebNLClassfier.specs\WebNLClassfier.specs.csproj", "{1348FC14-6906-434E-80DF-F09B635AF573}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB27CF4E-AA86-4AA0-9F51-79DAFF296FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB27CF4E-AA86-4AA0-9F51-79DAFF296FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB27CF4E-AA86-4AA0-9F51-79DAFF296FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB27CF4E-AA86-4AA0-9F51-79DAFF296FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0679DF8B-2339-425C-A930-F02C5EB54D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0679DF8B-2339-425C-A930-F02C5EB54D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0679DF8B-2339-425C-A930-F02C5EB54D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0679DF8B-2339-425C-A930-F02C5EB54D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B0DA45-16C2-4E68-94DD-B6C56129A3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B0DA45-16C2-4E68-94DD-B6C56129A3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B0DA45-16C2-4E68-94DD-B6C56129A3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B0DA45-16C2-4E68-94DD-B6C56129A3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1348FC14-6906-434E-80DF-F09B635AF573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1348FC14-6906-434E-80DF-F09B635AF573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1348FC14-6906-434E-80DF-F09B635AF573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1348FC14-6906-434E-80DF-F09B635AF573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB27CF4E-AA86-4AA0-9F51-79DAFF296FC2} = {B8570D95-8314-4899-A530-E3666C91E6D2}
+		{0679DF8B-2339-425C-A930-F02C5EB54D7E} = {B5DB0DCC-4491-4167-AC64-7158A046AD61}
+		{52B0DA45-16C2-4E68-94DD-B6C56129A3ED} = {DABDAF25-AC0C-44A5-B4C8-250EEDAEC49B}
+		{1348FC14-6906-434E-80DF-F09B635AF573} = {B8570D95-8314-4899-A530-E3666C91E6D2}
+	EndGlobalSection
+EndGlobal
