@@ -6,11 +6,11 @@
 
 <div>
     <p>
-        Ask me any question you like about the weather in the box below.
+        Ask any question you like about the weather.
 
         @using (Html.BeginForm())
         {
-            @Html.TextBox("textInput", "", new { id = "textInput" })
+            @Html.TextBox("textInput", "", new { id = "textInput", style = "width:330px" })
             <input id="classfiyButton" type="submit" value="classfiy" />
         }
 
@@ -20,7 +20,8 @@
         <ul>
             @foreach (var item in @Model.classes)
             {
-                <li>Class: @item.class_name, Confidence: @String.Format("{0:0.##}", item.confidence)</li>
+                //<li>Class: @item.class_name, Confidence: @String.Format("{0:0.##}", item.confidence)</li>
+                <li>It's @String.Format("{0:P}", item.confidence) sure you're asking about @item.class_name.</li>
             }
         </ul>
     </p>
